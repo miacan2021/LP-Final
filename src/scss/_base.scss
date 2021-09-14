@@ -1,5 +1,43 @@
 // variables, mixins, placeholder, root, *, html, body
-
+//color
 $primary: #EAE0D5;
 $secondary: #5E503F;
 $tertiary: #C6AC8F;
+$white: #ffff;
+
+//font
+$font1: 'Baloo 2', cursive;
+$font2: 'Roboto', sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $white;
+}
+
+@mixin logo ($size:36px){
+    font-size: $size;
+    font-family: $font1;
+    font-weight: lighter;
+}
+
+@mixin bg ($width:80vw, $height:50vh){
+    width: $width;
+    height: $height;
+    background-color: $primary;
+    border-radius: 21px;
+    background: #EAE0D5;
+    box-shadow:  13px 13px 26px #d3cac0,
+             -13px -13px 26px #fff6ea;
+}
+
+@mixin title ($size:30px) {
+    font-size: $size;
+    font-family: $font1;
+    font-weight: bold;
+    color: $secondary;
+}

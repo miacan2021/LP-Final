@@ -1,1 +1,69 @@
 @use 'base' as b;
+
+
+.berger{
+    position: fixed;
+    z-index: 500;
+    top: 4%;
+    right: 6%;
+    width: 60px;
+    height: 40px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #faf0e4, #d3cac0);
+    box-shadow:  6px 6px 12px #d5ccc2,
+                 -6px -6px 12px #fff4e8;
+    .menu-line{
+        position: absolute;
+        top: 7px;
+        right: 8px;
+        width: 70%;
+        height: 2px;
+        background-color: b.$tertiary;
+        border-bottom: 2px solid #d3cac0;
+        transition: all ease .5s;
+        &.line2{
+            top: 18px;
+            width: 35%;
+        }
+        &.line3{
+            top: 28px;
+            width: 35%;
+        }
+    }
+   &.click{
+    border-radius: 15px;
+    background: linear-gradient(145deg, #d3cac0, #faf0e4);
+    box-shadow:  6px 6px 12px #d5ccc2,
+                 -6px -6px 12px #fff4e8;
+        .menu-line{
+            width: 70%; 
+            &.line1{
+                transform: translateY(11px) rotate(135deg);
+            }
+            &.line2{
+                transform: translateX(-17px) scaleX(0);
+            }
+            &.line3{
+                transform: translateY(-11px) rotate(-135deg);
+            }
+        }
+    }
+}
+
+
+.btn{
+    width: 180px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    background: #C6AC8F;
+    box-shadow:  7px 7px 14px #a8927a,
+             -7px -7px 14px #e4c6a4;
+    cursor: pointer;
+    & a{
+        font-size: 24px;
+        text-decoration: none;
+        color: b.$primary;
+        font-family: b.$font1;
+    }
+}

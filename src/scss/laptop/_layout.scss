@@ -4,4 +4,7 @@
 
 @media (min-width: 1280px) {
 
+    .logo{
+        @include b.logo;
+    }
  }

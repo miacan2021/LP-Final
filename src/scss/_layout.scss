@@ -1,2 +1,78 @@
 @use 'base'  as b;
 
+.logo{
+    margin: 10px 20px;
+    @include b.logo();
+
+}
+
+.nav_list{
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 0;
+    background-color: rgba(b.$primary, 0.8);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    transform: translateY(-10%);
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .7s;
+    border-radius: 15px;
+    box-shadow:  6px 6px 12px #d5ccc2,
+             -6px -6px 12px #fff4e8;
+        &_item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 15%;
+            border-radius: 21px;
+background: #EAE0D5;
+box-shadow: inset 9px 9px 10px #d5ccc2,
+            inset -9px -9px 10px #fff4e8;
+        }
+        &_link{
+            color: b.$secondary;
+            text-decoration: none;
+            font-family: b.$font2;
+            font-size: 18px;
+            font-weight: lighter;
+            cursor: pointer;
+        }
+    &.open{
+        height: 40vh;
+        transform: translateY(0);
+    }
+}
+
+.hero.container{
+    margin: 80px auto 0;
+    @include b.bg(80vw, 70vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .head-title{
+        @include b.title(30px);
+        width: 80%;
+        padding: 20px;
+    }
+    & .head-p{
+        @include b.title(18px);
+        width: 80%;
+        padding: 0 20px;
+    
+    }
+    & .card-img{
+        width: 60%;
+        height: auto;
+        transform: rotate(43deg);
+        
+    }
+    .btn{
+        margin-bottom: 25px;   
+    }
+}

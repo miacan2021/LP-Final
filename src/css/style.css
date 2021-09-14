@@ -1,3 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: #ffff;
+}
+
+.berger {
+  position: fixed;
+  z-index: 500;
+  top: 4%;
+  right: 6%;
+  width: 60px;
+  height: 40px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #faf0e4, #d3cac0);
+  box-shadow: 6px 6px 12px #d5ccc2, -6px -6px 12px #fff4e8;
+}
+.berger .menu-line {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  width: 70%;
+  height: 2px;
+  background-color: #C6AC8F;
+  border-bottom: 2px solid #d3cac0;
+  transition: all ease 0.5s;
+}
+.berger .menu-line.line2 {
+  top: 18px;
+  width: 35%;
+}
+.berger .menu-line.line3 {
+  top: 28px;
+  width: 35%;
+}
+.berger.click {
+  border-radius: 15px;
+  background: linear-gradient(145deg, #d3cac0, #faf0e4);
+  box-shadow: 6px 6px 12px #d5ccc2, -6px -6px 12px #fff4e8;
+}
+.berger.click .menu-line {
+  width: 70%;
+}
+.berger.click .menu-line.line1 {
+  transform: translateY(11px) rotate(135deg);
+}
+.berger.click .menu-line.line2 {
+  transform: translateX(-17px) scaleX(0);
+}
+.berger.click .menu-line.line3 {
+  transform: translateY(-11px) rotate(-135deg);
+}
+
+.btn {
+  width: 180px;
+  height: 45px;
+  border: none;
+  border-radius: 30px;
+  background: #C6AC8F;
+  box-shadow: 7px 7px 14px #a8927a, -7px -7px 14px #e4c6a4;
+  cursor: pointer;
+}
+.btn a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #EAE0D5;
+  font-family: "Baloo 2", cursive;
+}
+
+.logo {
+  margin: 10px 20px;
+  font-size: 36px;
+  font-family: "Baloo 2", cursive;
+  font-weight: lighter;
+}
+
+.nav_list {
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  height: 0;
+  background-color: rgba(234, 224, 213, 0.8);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  transform: translateY(-10%);
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.7s;
+  border-radius: 15px;
+  box-shadow: 6px 6px 12px #d5ccc2, -6px -6px 12px #fff4e8;
+}
+.nav_list_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 15%;
+  border-radius: 21px;
+  background: #EAE0D5;
+  box-shadow: inset 9px 9px 10px #d5ccc2, inset -9px -9px 10px #fff4e8;
+}
+.nav_list_link {
+  color: #5E503F;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.nav_list.open {
+  height: 40vh;
+  transform: translateY(0);
+}
+
+.hero.container {
+  margin: 80px auto 0;
+  width: 80vw;
+  height: 70vh;
+  background-color: #EAE0D5;
+  border-radius: 21px;
+  background: #EAE0D5;
+  box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero.container .head-title {
+  font-size: 30px;
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  color: #5E503F;
+  width: 80%;
+  padding: 20px;
+}
+.hero.container .head-p {
+  font-size: 18px;
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  color: #5E503F;
+  width: 80%;
+  padding: 0 20px;
+}
+.hero.container .card-img {
+  width: 60%;
+  height: auto;
+  transform: rotate(43deg);
+}
+.hero.container .btn {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 599px) {
+  .logo {
+    font-size: 24px;
+    font-family: "Baloo 2", cursive;
+    font-weight: lighter;
+  }
+}
+@media (min-width: 1280px) {
+  .logo {
+    font-size: 36px;
+    font-family: "Baloo 2", cursive;
+    font-weight: lighter;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
