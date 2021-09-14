@@ -1,0 +1,14 @@
+{
+  "name": "lp-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/scss/:dist/css/ --no-source-map --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.40.0"
+  }
+}
