@@ -1,3 +1,7 @@
-body{
-    background-color: aqua;
-}
+@use 'base' as b;
+@use 'components' as c;
+@use 'layout' as l;
+@forward  'mobile/layout';
+@forward 'tablet/layout';
+@forward 'laptop/layout';
+

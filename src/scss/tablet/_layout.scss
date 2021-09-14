@@ -1,0 +1,7 @@
+@use '../base' as b;
+@use '../components' as c;
+@forward '../mobile/layout';
+ 
+ @media (min-width: 600px) {
+
+}

@@ -1,0 +1,7 @@
+@use '../base' as b;
+@use '../components' as c;
+@forward '../tablet/layout';
+
+@media (min-width: 1280px) {
+
+ }
