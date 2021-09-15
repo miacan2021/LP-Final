@@ -64,7 +64,8 @@ body {
   cursor: pointer;
 }
 .btn a {
-  font-size: 24px;
+  font-size: 20px;
+  letter-spacing: 1px;
   text-decoration: none;
   color: #ffff;
   font-family: "Baloo 2", cursive;
@@ -88,6 +89,52 @@ body {
   height: 2px;
   background-color: #C6AC8F;
   margin-bottom: 70px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80vw;
+  height: 45vh;
+  background-color: #EAE0D5;
+  border-radius: 21px;
+  background: #EAE0D5;
+  box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
+  margin-bottom: 70px;
+}
+.card .bg {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: #ffff;
+  border-radius: 41% 59% 23% 77%/59% 54% 46% 41%;
+}
+.card .bg .icon {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card .apply-title {
+  font-size: 24px;
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  color: #5E503F;
+  letter-spacing: 2.5px;
+  margin: 40px 0 30px 0;
+}
+.card .apply-p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #5E503F;
+  font-weight: 280;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 .logo {
