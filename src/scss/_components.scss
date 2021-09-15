@@ -56,14 +56,30 @@
     height: 45px;
     border: none;
     border-radius: 30px;
-    background: #C6AC8F;
-    box-shadow:  7px 7px 14px #a8927a,
-             -7px -7px 14px #e4c6a4;
+    background: linear-gradient(145deg, #b9a083, #dcbe9c);
+    box-shadow:  6px 6px 12px #8c7963,
+                 -6px -6px 12px #ffebc1;
     cursor: pointer;
     & a{
         font-size: 24px;
         text-decoration: none;
-        color: b.$primary;
+        color: b.$white;
         font-family: b.$font1;
     }
+}
+
+.titles{
+    @include b.flex;
+    flex-direction: column;
+    .title {
+        @include b.title(30px);
+        margin: 110px 0 10px 0;
+    }
+
+.title-line{
+    width: 80px;
+    height: 2px;
+    background-color: b.$tertiary;
+    margin-bottom: 70px;
+}
 }

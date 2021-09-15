@@ -41,3 +41,21 @@ body{
     font-weight: bold;
     color: $secondary;
 }
+
+@mixin description ($size:24px){
+    font-size: $size;
+    font-family: $font2;
+    color: $secondary;
+    font-weight: 280;
+}
+
+@mixin center {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

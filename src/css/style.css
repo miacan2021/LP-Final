@@ -59,15 +59,35 @@ body {
   height: 45px;
   border: none;
   border-radius: 30px;
-  background: #C6AC8F;
-  box-shadow: 7px 7px 14px #a8927a, -7px -7px 14px #e4c6a4;
+  background: linear-gradient(145deg, #b9a083, #dcbe9c);
+  box-shadow: 6px 6px 12px #8c7963, -6px -6px 12px #ffebc1;
   cursor: pointer;
 }
 .btn a {
   font-size: 24px;
   text-decoration: none;
-  color: #EAE0D5;
+  color: #ffff;
   font-family: "Baloo 2", cursive;
+}
+
+.titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.titles .title {
+  font-size: 30px;
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  color: #5E503F;
+  margin: 110px 0 10px 0;
+}
+.titles .title-line {
+  width: 80px;
+  height: 2px;
+  background-color: #C6AC8F;
+  margin-bottom: 70px;
 }
 
 .logo {
@@ -149,10 +169,73 @@ body {
 .hero.container .card-img {
   width: 60%;
   height: auto;
-  transform: rotate(43deg);
+  transform: rotate(42deg);
 }
 .hero.container .btn {
   margin-bottom: 25px;
+}
+
+#feature, #apply {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.left .img, .right .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 30vh;
+  background-color: #EAE0D5;
+  border-radius: 21px;
+  background: #EAE0D5;
+  box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
+  margin-bottom: 40px;
+  flex-direction: column;
+}
+.left .img:nth-child(1), .right .img:nth-child(1) {
+  margin-top: 60px;
+}
+.left .img p, .right .img p {
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.left .img img, .right .img img {
+  width: 80%;
+  height: auto;
+  max-width: 280px;
+  border-radius: 10px;
+}
+.left .feature-head, .right .feature-head {
+  font-size: 24px;
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  color: #5E503F;
+  margin-bottom: 20px;
+}
+.left .feature-p, .right .feature-p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #5E503F;
+  font-weight: 280;
+}
+.left .btn, .right .btn {
+  margin-top: 50px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 @media (max-width: 599px) {

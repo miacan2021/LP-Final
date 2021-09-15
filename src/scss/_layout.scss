@@ -1,12 +1,12 @@
-@use 'base'  as b;
+@use 'base'as b;
 
-.logo{
+.logo {
     margin: 10px 20px;
     @include b.logo();
 
 }
 
-.nav_list{
+.nav_list {
     position: fixed;
     z-index: 100;
     width: 100vw;
@@ -21,58 +21,111 @@
     transform: translateY(-10%);
     transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .7s;
     border-radius: 15px;
-    box-shadow:  6px 6px 12px #d5ccc2,
-             -6px -6px 12px #fff4e8;
-        &_item{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-            height: 15%;
-            border-radius: 21px;
-background: #EAE0D5;
-box-shadow: inset 9px 9px 10px #d5ccc2,
+    box-shadow: 6px 6px 12px #d5ccc2,
+        -6px -6px 12px #fff4e8;
+
+    &_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 15%;
+        border-radius: 21px;
+        background: #EAE0D5;
+        box-shadow: inset 9px 9px 10px #d5ccc2,
             inset -9px -9px 10px #fff4e8;
-        }
-        &_link{
-            color: b.$secondary;
-            text-decoration: none;
-            font-family: b.$font2;
-            font-size: 18px;
-            font-weight: lighter;
-            cursor: pointer;
-        }
-    &.open{
+    }
+
+    &_link {
+        color: b.$secondary;
+        text-decoration: none;
+        font-family: b.$font2;
+        font-size: 18px;
+        font-weight: lighter;
+        cursor: pointer;
+    }
+
+    &.open {
         height: 40vh;
         transform: translateY(0);
     }
 }
 
-.hero.container{
+.hero.container {
     margin: 80px auto 0;
     @include b.bg(80vw, 70vh);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    & .head-title{
+
+    & .head-title {
         @include b.title(30px);
         width: 80%;
         padding: 20px;
     }
-    & .head-p{
+
+    & .head-p {
         @include b.title(18px);
         width: 80%;
         padding: 0 20px;
-    
     }
-    & .card-img{
+
+    & .card-img {
         width: 60%;
         height: auto;
-        transform: rotate(43deg);
-        
+        transform: rotate(42deg);
     }
-    .btn{
-        margin-bottom: 25px;   
+
+    .btn {
+        margin-bottom: 25px;
     }
+}
+
+#feature, #apply{
+    @include b.center;
+}
+
+.left, .right{
+    @include b.flex;
+    flex-direction: column;
+
+    & .img {
+        @include b.flex;
+        @include b.bg(80vw, 30vh);
+        margin-bottom: 40px;
+        flex-direction: column;
+        &:nth-child(1){
+            margin-top: 60px;
+        }
+        & p{
+            color: b.$white;
+            font-family: b.$font2;
+            font-size: 10px;
+            margin-top: 5px;
+        }
+        & img {
+            width: 80%;
+            height: auto;
+            max-width: 280px;
+            border-radius: 10px;
+        }
+    }
+
+    & .feature-head {
+        @include b.title(24px);
+        margin-bottom: 20px;
+    }
+
+    & .feature-p {
+        @include b.description(18px);
+    }
+    & .btn{
+        margin-top: 50px;
+    }
+}
+.cards{
+    @include b.flex;
+    flex-direction: column;
+    
 }
