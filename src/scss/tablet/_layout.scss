@@ -16,7 +16,7 @@
             font-size: 20px;
         }
     }
-}
+
 
 #feature,
 #apply,
@@ -52,8 +52,8 @@
     .title {
         @include b.title(35px);
     }
-
     .title-line {
         width: 100px;
     }
+}
 }

@@ -1,10 +1,210 @@
-@use '../base' as b;
-@use '../components' as c;
+@use '../base'as b;
+@use '../components'as c;
 @forward '../tablet/layout';
 
-@media (min-width: 1280px) {
-
-    .logo{
+@media (min-width: 1000px) {
+    .logo {
         @include b.logo;
     }
- }
+
+    .berger {
+        display: none;
+    }
+
+    .nav_menu {
+        .nav_list {
+            flex-direction: row;
+            height: 60px;
+            width: 500px;
+            top: 5%;
+            right: 5%;
+
+            &_item {
+                width: 100%;
+                height: 100%;
+                border-radius: 0;
+                box-shadow: none;
+                background-color: transparent;
+
+                &:hover {
+                    border-radius: 18px;
+                    background: #EAE0D5;
+                    box-shadow: 10px 10px 12px #a69f97,
+                        -10px -10px 12px #ffffff;
+                }
+            }
+        }
+    }
+
+    .hero.container {
+        display: grid;
+        grid-template-areas: "head head img"
+            "sub sub img"
+            "btn btn img"
+        ;
+        align-items: center;
+        justify-items: center;
+        @include b.bg(80vw, 80vh);
+
+        & .head-title {
+            margin-top: 50px;
+            @include b.title(48px);
+        }
+
+        .head-p {
+            grid-area: head;
+            margin-top: 0;
+            margin-bottom: 100px;
+            grid-area: sub;
+            @include b.title(24px);
+        }
+
+        .card-img {
+            grid-area: img;
+            width: 90%;
+        }
+
+        .btn {
+            grid-area: btn;
+        }
+    }
+
+
+    .titles {
+        .title {
+            @include b.title(48px);
+            margin: 140px 0 10px 0;
+        }
+
+        .title-line {
+            width: 100px;
+            height: 5px;
+        }
+    }
+
+    #feature {
+        width: 100vw;
+    }
+
+    .left {
+        flex-direction: row;
+        overflow: hidden;
+
+        & .img {
+            position: relative;
+            left: -10%;
+            margin-right: 10px;
+            width: 50vw;
+            align-items: flex-end;
+            @include b.bg(50vw, 50vh);
+
+            & img {
+                margin-right: 50px;
+                max-width: 500px;
+
+            }
+        }
+
+        .text {
+            max-width: 40vw;
+        }
+    }
+
+    .right {
+        flex-direction: row-reverse;
+        overflow: hidden;
+        flex-wrap: wrap;
+
+        & .img {
+            position: relative;
+            right: -10%;
+            margin-left: 10px;
+            width: 50vw;
+            align-items: flex-start;
+            @include b.bg(50vw, 50vh);
+
+            & p {
+                margin-left: 5%;
+            }
+
+            & img {
+                margin-left: 50px;
+                max-width: 500px;
+
+            }
+        }
+
+        .text {
+            @include b.flex;
+            flex-direction: column;
+            text-align: center;
+            max-width: 40vw;
+        }
+
+        .btn {
+
+            margin-bottom: 20px;
+        }
+    }
+
+    #apply {
+        width: 90vw;
+    }
+
+    .cards {
+        margin: 0 auto;
+        max-width: 1280px;
+        flex-direction: row;
+
+        & .card {
+            @include b.bg(33vw, 50vh);
+            margin: 0 25px;
+        }
+    }
+
+    #form {
+        width: 100vw;
+    }
+
+    .get-card {
+        flex-direction: row-reverse;
+        overflow: hidden;
+        flex-wrap: wrap;
+
+        & .img {
+            position: relative;
+            right: -10%;
+            margin-left: 10px;
+            width: 50vw;
+            align-items: flex-start;
+            @include b.bg(50vw, 50vh);
+
+            & p {
+                margin-left: 5%;
+            }
+
+            & img {
+                margin-left: 50px;
+                max-width: 500px;
+
+            }
+        }
+    }
+
+    #contact {
+        .container {
+            height: 350px;
+
+            .logo {
+                font-size: 38px;
+            }
+
+            .social {
+                max-width: 30%;
+                margin: 10px 0;
+            }
+        }
+
+    }
+
+}

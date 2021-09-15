@@ -17,6 +17,7 @@ body {
   border-radius: 15px;
   background: linear-gradient(145deg, #faf0e4, #d3cac0);
   box-shadow: 6px 6px 12px #d5ccc2, -6px -6px 12px #fff4e8;
+  cursor: pointer;
 }
 .berger .menu-line {
   position: absolute;
@@ -352,6 +353,12 @@ body {
   outline: none;
   margin-top: 30px;
 }
+.get-card .input-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .get-card .btn {
   display: flex;
   align-items: center;
@@ -450,61 +457,260 @@ body {
     margin-top: 10px;
     font-size: 20px;
   }
-}
-#feature,
+
+  #feature,
 #apply,
 #form {
-  width: 70vw;
-}
+    width: 70vw;
+  }
 
-.left .img,
+  .left .img,
 .right .img,
 .get-card .img {
-  width: 70vw;
-  height: 40vh;
-  background-color: #EAE0D5;
-  border-radius: 21px;
-  background: #EAE0D5;
-  box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
-}
-.left .img img,
+    width: 70vw;
+    height: 40vh;
+    background-color: #EAE0D5;
+    border-radius: 21px;
+    background: #EAE0D5;
+    box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
+  }
+  .left .img img,
 .right .img img,
 .get-card .img img {
-  max-width: 350px;
-}
-.left p,
+    max-width: 350px;
+  }
+  .left p,
 .right p,
 .get-card p {
-  margin: 30px 0;
-}
+    margin: 30px 0;
+  }
 
-.card {
-  width: 50vw;
-  height: 50vh;
-  background-color: #EAE0D5;
-  border-radius: 21px;
-  background: #EAE0D5;
-  box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
-}
-.card .apply-p {
-  width: 70%;
-}
+  .card {
+    width: 50vw;
+    height: 50vh;
+    background-color: #EAE0D5;
+    border-radius: 21px;
+    background: #EAE0D5;
+    box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
+  }
+  .card .apply-p {
+    width: 70%;
+  }
 
-.titles .title {
-  font-size: 35px;
-  font-family: "Baloo 2", cursive;
-  font-weight: bold;
-  color: #5E503F;
+  .titles .title {
+    font-size: 35px;
+    font-family: "Baloo 2", cursive;
+    font-weight: bold;
+    color: #5E503F;
+  }
+  .titles .title-line {
+    width: 100px;
+  }
 }
-.titles .title-line {
-  width: 100px;
-}
-
-@media (min-width: 1280px) {
+@media (min-width: 1000px) {
   .logo {
     font-size: 36px;
     font-family: "Baloo 2", cursive;
     font-weight: lighter;
+  }
+
+  .berger {
+    display: none;
+  }
+
+  .nav_menu .nav_list {
+    flex-direction: row;
+    height: 60px;
+    width: 500px;
+    top: 5%;
+    right: 5%;
+  }
+  .nav_menu .nav_list_item {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .nav_menu .nav_list_item:hover {
+    border-radius: 18px;
+    background: #EAE0D5;
+    box-shadow: 10px 10px 12px #a69f97, -10px -10px 12px #ffffff;
+  }
+
+  .hero.container {
+    display: grid;
+    grid-template-areas: "head head img" "sub sub img" "btn btn img";
+    align-items: center;
+    justify-items: center;
+    width: 80vw;
+    height: 80vh;
+    background-color: #EAE0D5;
+    border-radius: 21px;
+    background: #EAE0D5;
+    box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
+  }
+  .hero.container .head-title {
+    margin-top: 50px;
+    font-size: 48px;
+    font-family: "Baloo 2", cursive;
+    font-weight: bold;
+    color: #5E503F;
+  }
+  .hero.container .head-p {
+    grid-area: head;
+    margin-top: 0;
+    margin-bottom: 100px;
+    grid-area: sub;
+    font-size: 24px;
+    font-family: "Baloo 2", cursive;
+    font-weight: bold;
+    color: #5E503F;
+  }
+  .hero.container .card-img {
+    grid-area: img;
+    width: 90%;
+  }
+  .hero.container .btn {
+    grid-area: btn;
+  }
+
+  .titles .title {
+    font-size: 48px;
+    font-family: "Baloo 2", cursive;
+    font-weight: bold;
+    color: #5E503F;
+    margin: 140px 0 10px 0;
+  }
+  .titles .title-line {
+    width: 100px;
+    height: 5px;
+  }
+
+  #feature {
+    width: 100vw;
+  }
+
+  .left {
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .left .img {
+    position: relative;
+    left: -10%;
+    margin-right: 10px;
+    width: 50vw;
+    align-items: flex-end;
+    width: 50vw;
+    height: 50vh;
+    background-color: #EAE0D5;
+    border-radius: 21px;
+    background: #EAE0D5;
+    box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
+  }
+  .left .img img {
+    margin-right: 50px;
+    max-width: 500px;
+  }
+  .left .text {
+    max-width: 40vw;
+  }
+
+  .right {
+    flex-direction: row-reverse;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  .right .img {
+    position: relative;
+    right: -10%;
+    margin-left: 10px;
+    width: 50vw;
+    align-items: flex-start;
+    width: 50vw;
+    height: 50vh;
+    background-color: #EAE0D5;
+    border-radius: 21px;
+    background: #EAE0D5;
+    box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
+  }
+  .right .img p {
+    margin-left: 5%;
+  }
+  .right .img img {
+    margin-left: 50px;
+    max-width: 500px;
+  }
+  .right .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 40vw;
+  }
+  .right .btn {
+    margin-bottom: 20px;
+  }
+
+  #apply {
+    width: 90vw;
+  }
+
+  .cards {
+    margin: 0 auto;
+    max-width: 1280px;
+    flex-direction: row;
+  }
+  .cards .card {
+    width: 33vw;
+    height: 50vh;
+    background-color: #EAE0D5;
+    border-radius: 21px;
+    background: #EAE0D5;
+    box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
+    margin: 0 25px;
+  }
+
+  #form {
+    width: 100vw;
+  }
+
+  .get-card {
+    flex-direction: row-reverse;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  .get-card .img {
+    position: relative;
+    right: -10%;
+    margin-left: 10px;
+    width: 50vw;
+    align-items: flex-start;
+    width: 50vw;
+    height: 50vh;
+    background-color: #EAE0D5;
+    border-radius: 21px;
+    background: #EAE0D5;
+    box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
+  }
+  .get-card .img p {
+    margin-left: 5%;
+  }
+  .get-card .img img {
+    margin-left: 50px;
+    max-width: 500px;
+  }
+
+  #contact .container {
+    height: 350px;
+  }
+  #contact .container .logo {
+    font-size: 38px;
+  }
+  #contact .container .social {
+    max-width: 30%;
+    margin: 10px 0;
   }
 }
 
