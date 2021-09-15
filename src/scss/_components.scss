@@ -62,7 +62,7 @@
                  -6px -6px 12px #ffebc1;
     cursor: pointer;
     & a{
-        font-size: 20px;
+        font-size: 16px;
         letter-spacing: 1px;
         text-decoration: none;
         color: b.$white;
@@ -98,20 +98,15 @@
 .card{
     @include b.flex;
     flex-direction: column;
-    @include b.bg(80vw, 50vh);
+    @include b.bg(80vw, 40vh);
     margin-bottom: 70px;
-    &:nth-child(3){
-        margin-bottom: 10px;
-    }
+
     .bg{
         position: relative;
         width: 70px;
         height: 70px;
         background-color: b.$white;
         border-radius: 41% 59% 23% 77% / 59% 54% 46% 41%; 
-        &:nth-child(1){
-            margin-top: 15px;
-        }
         & .icon{
           position: absolute;
           width:35px;
@@ -123,12 +118,12 @@
         }
     }
     .apply-title{
-        @include b.title(24px);
+        @include b.title(23px);
         letter-spacing: 2.5px;
         margin: 40px 0 30px 0;
     }
     .apply-p{
-        @include b.description(18px);
+        @include b.description(16px);
         padding: 0 20px;
         text-align: center;
         line-height: 1.5rem;

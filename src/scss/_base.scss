@@ -6,8 +6,10 @@ $tertiary: #C6AC8F;
 $white: #ffff;
 
 //font
-$font1: 'Baloo 2', cursive;
-$font2: 'Roboto', sans-serif;
+$font1: 'Baloo 2',
+cursive;
+$font2: 'Roboto',
+sans-serif;
 
 
 * {
@@ -15,24 +17,24 @@ $font2: 'Roboto', sans-serif;
     padding: 0;
 }
 
-body{
+body {
     background-color: $white;
 }
 
-@mixin logo ($size:36px){
+@mixin logo ($size:36px) {
     font-size: $size;
     font-family: $font1;
     font-weight: lighter;
 }
 
-@mixin bg ($width:80vw, $height:50vh){
+@mixin bg ($width:80vw, $height:50vh) {
     width: $width;
     height: $height;
     background-color: $primary;
     border-radius: 21px;
     background: #EAE0D5;
-    box-shadow:  13px 13px 26px #d3cac0,
-             -13px -13px 26px #fff6ea;
+    box-shadow: 13px 13px 26px #d3cac0,
+        -13px -13px 26px #fff6ea;
 }
 
 @mixin title ($size:30px) {
@@ -42,7 +44,7 @@ body{
     color: $secondary;
 }
 
-@mixin description ($size:24px){
+@mixin description ($size:24px) {
     font-size: $size;
     font-family: $font2;
     color: $secondary;

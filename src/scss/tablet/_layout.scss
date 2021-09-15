@@ -1,7 +1,59 @@
-@use '../base' as b;
-@use '../components' as c;
+@use '../base'as b;
+@use '../components'as c;
 @forward '../mobile/layout';
- 
- @media (min-width: 600px) {
 
+@media (min-width: 600px) {
+    .hero.container {
+        @include b.bg(80vw, 90vh);
+        margin: 50px auto 0;
+
+        .head-title {
+            font-size: 40px;
+        }
+
+        .head-p {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+    }
+}
+
+#feature,
+#apply,
+#form {
+    width: 70vw;
+}
+
+.left,
+.right,
+.get-card {
+    .img {
+        @include b.bg(70vw, 40vh);
+
+        & img {
+            max-width: 350px;
+        }
+    }
+
+    & p {
+        margin: 30px 0;
+    }
+}
+
+.card {
+    @include b.bg(50vw, 50vh);
+
+    .apply-p {
+        width: 70%;
+    }
+}
+
+.titles {
+    .title {
+        @include b.title(35px);
+    }
+
+    .title-line {
+        width: 100px;
+    }
 }
