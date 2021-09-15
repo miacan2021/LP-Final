@@ -82,7 +82,7 @@
     }
 }
 
-#feature, #apply{
+#feature, #apply, #form{
     @include b.center;
 }
 
@@ -128,5 +128,44 @@
 .cards{
     @include b.flex;
     flex-direction: column;
-    
+}
+
+.get-card{
+    @include b.flex;
+    flex-direction: column;
+    .img{
+        @include b.flex;
+        @include b.bg(80vw, 30vh);
+        margin-bottom: 40px;
+        flex-direction: column;
+        & img{
+            width: 80%;
+            height: auto;
+            max-width: 280px;
+            border-radius: 10px;
+        }
+    }
+    .form-head{
+        @include b.title(18px);
+    }
+    .mail{
+        height: 25px;
+        width: 80%;
+        background-color: transparent;
+        border-radius: 20px;
+        border: 2px solid b.$primary;
+        padding: 0 5px;
+        outline: none;
+        margin-top: 30px;
+    }
+    .btn{
+        @include b.flex;
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: b.$white;
+        font-family: b.$font1;
+        margin-top: 30px;
+    }
+
 }

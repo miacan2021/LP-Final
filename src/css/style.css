@@ -83,6 +83,7 @@ body {
   font-weight: bold;
   color: #5E503F;
   margin: 110px 0 10px 0;
+  text-align: center;
 }
 .titles .title-line {
   width: 80px;
@@ -97,7 +98,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 80vw;
-  height: 45vh;
+  height: 50vh;
   background-color: #EAE0D5;
   border-radius: 21px;
   background: #EAE0D5;
@@ -118,6 +119,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  fill: #5E503F;
 }
 .card .apply-title {
   font-size: 24px;
@@ -222,7 +224,7 @@ body {
   margin-bottom: 25px;
 }
 
-#feature, #apply {
+#feature, #apply, #form {
   width: 80vw;
   margin: 0 auto;
 }
@@ -285,7 +287,60 @@ body {
   flex-direction: column;
 }
 
-@media (max-width: 599px) {
+.get-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.get-card .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 30vh;
+  background-color: #EAE0D5;
+  border-radius: 21px;
+  background: #EAE0D5;
+  box-shadow: 13px 13px 26px #d3cac0, -13px -13px 26px #fff6ea;
+  margin-bottom: 40px;
+  flex-direction: column;
+}
+.get-card .img img {
+  width: 80%;
+  height: auto;
+  max-width: 280px;
+  border-radius: 10px;
+}
+.get-card .form-head {
+  font-size: 18px;
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  color: #5E503F;
+}
+.get-card .mail {
+  height: 25px;
+  width: 80%;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #EAE0D5;
+  padding: 0 5px;
+  outline: none;
+  margin-top: 30px;
+}
+.get-card .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ffff;
+  font-family: "Baloo 2", cursive;
+  margin-top: 30px;
+}
+
+@media (min-width: 480px) {
   .logo {
     font-size: 24px;
     font-family: "Baloo 2", cursive;

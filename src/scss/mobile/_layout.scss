@@ -2,7 +2,7 @@
 @use '../components' as c;
 @forward '../layout';
  
- @media (max-width: 599px) {
+@media (min-width: 480px) {
          .logo{
              @include b.logo(24px);
          }

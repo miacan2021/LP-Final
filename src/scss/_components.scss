@@ -75,6 +75,7 @@
     .title {
         @include b.title(30px);
         margin: 110px 0 10px 0;
+        text-align: center;
     }
 
 .title-line{
@@ -88,7 +89,7 @@
 .card{
     @include b.flex;
     flex-direction: column;
-    @include b.bg(80vw, 45vh);
+    @include b.bg(80vw, 50vh);
     margin-bottom: 70px;
     .bg{
         position: relative;
@@ -103,6 +104,7 @@
           top: 50%;
           left: 50%;  
           transform: translate(-50%, -50%);
+           fill: b.$secondary;
         }
     }
     .apply-title{
