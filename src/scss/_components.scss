@@ -163,7 +163,7 @@
 
         @for $i from 1 through 10 {
             &:nth-child(#{$i}) {
-                transition-delay: $i * 0.2s;
+                transition-delay: $i * 0.1s;
             }
         }
     }
