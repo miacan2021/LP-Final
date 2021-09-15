@@ -2,7 +2,7 @@
 
 .logo {
     margin: 10px 20px;
-    @include b.logo();
+    @include b.logo(24px);
 
 }
 
@@ -52,7 +52,7 @@
 }
 
 .hero.container {
-    margin: 80px auto 0;
+    margin: 60px auto 0;
     @include b.bg(80vw, 70vh);
     display: flex;
     flex-direction: column;
@@ -105,10 +105,11 @@
             margin-top: 5px;
         }
         & img {
-            width: 80%;
+            width: 90%;
             height: auto;
             max-width: 280px;
-            border-radius: 10px;
+            border-radius: 83% 17% 73% 27% / 25% 46% 54% 75%;
+
         }
     }
 
@@ -139,10 +140,11 @@
         margin-bottom: 40px;
         flex-direction: column;
         & img{
-            width: 80%;
+            width: 90%;
             height: auto;
             max-width: 280px;
             border-radius: 10px;
+            border-radius: 61% 39% 28% 72% / 24% 59% 41% 76%;
         }
     }
     .form-head{
@@ -166,6 +168,49 @@
         color: b.$white;
         font-family: b.$font1;
         margin-top: 30px;
+        &:hover{
+            background: #EAE0D5;
+            box-shadow: inset 10px 10px 12px #a69f97,
+                        inset -10px -10px 12px #ffffff;
+            
+            color: b.$secondary;
+        }       
     }
+    margin-bottom: 80px;
+}
 
+#contact{
+    background-color: b.$primary;
+    text-align: center;
+    clip-path: polygon(51% 0, 100% 13%, 100% 100%, 0 100%, 0 13%);
+    .container{
+        height: 300px;
+        width: 100vw;
+        @include b.center;
+        @include b.flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .logo{
+            margin: 25px 0;
+            font-size: 30px;
+            
+        }
+        .footer-p{
+            @include b.title(15px);
+        }
+        .social{
+            width: 60%;
+            @include b.flex;
+            justify-content: space-around;
+            & .icon{
+                cursor: pointer;
+                fill: b.$secondary;
+            }
+        }
+        .copy{
+            font-size: 10px;
+            color: b.$secondary;
+            font-family: b.$font2;
+        }
+    }
 }
