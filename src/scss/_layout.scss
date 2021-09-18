@@ -54,20 +54,20 @@
 
 .hero.container {
     margin: 60px auto 0;
-    @include b.bg(80vw, 70vh);
+    @include b.bg(80vw, 80vh);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     & .head-title {
-        @include b.title(30px);
+        @include b.title(25px);
         width: 80%;
         padding: 20px;
     }
 
     & .head-p {
-        @include b.title(18px);
+        @include b.title(16px);
         width: 80%;
         padding: 0 20px;
     }
@@ -96,12 +96,12 @@
 
     & .img {
         @include b.flex;
-        @include b.bg(80vw, 30vh);
+        @include b.bg(80vw, 35vh);
         margin-bottom: 40px;
         flex-direction: column;
 
         &:nth-child(1) {
-            margin-top: 60px;
+            margin-top: 20px;
         }
 
         & p {
@@ -119,28 +119,36 @@
 
         }
     }
-   & .text{
-    @include b.flex;
-    flex-direction: column;
-    
-    & .feature-head {
-        @include b.title(24px);
-        margin-bottom: 20px;
-    }
 
-    & .feature-p {
-        @include b.description(18px);
-    }
+    & .text {
+        @include b.flex;
+        flex-direction: column;
 
-    & .btn {
-        margin-top: 50px;
+        & .feature-head {
+            @include b.title(20px);
+            margin-bottom: 20px;
+        }
+
+        & .feature-p {
+            @include b.description(16px);
+            margin-bottom: 5px;
+        }
+
+        & .btn {
+            margin-top: 50px;
+        }
     }
-}
 }
 
 .cards {
     @include b.flex;
     flex-direction: column;
+}
+.card {
+    @include b.bg(70vw, 60vh);
+    .apply-p {
+        font-size: 16px;
+    }
 }
 
 .get-card {
@@ -149,7 +157,7 @@
 
     .img {
         @include b.flex;
-        @include b.bg(80vw, 30vh);
+        @include b.bg(80vw, 35vh);
         margin-bottom: 40px;
         flex-direction: column;
 
@@ -176,10 +184,12 @@
         outline: none;
         margin-top: 30px;
     }
-.input-form{
-    @include b.flex;
-    flex-direction: column;
-}
+
+    .input-form {
+        @include b.flex;
+        flex-direction: column;
+    }
+
     .btn {
         @include b.flex;
         font-size: 16px;

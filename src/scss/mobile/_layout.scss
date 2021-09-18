@@ -6,11 +6,53 @@
     .logo {
         @include b.logo(28px);
     }
-    .card{
-        width: 70vw;
-        .apply-p{
-            font-size: 18px;
+
+    .hero.container {
+        @include b.bg(80vw, 70vh);
+
+        & .head-title {
+            @include b.title(30px);
+        }
+
+        & .head-p {
+            @include b.title(18px);
+
         }
     }
-   
+
+    .left,
+    .right {
+        & .img {
+            @include b.bg(80vw, 30vh);
+
+            &:nth-child(1) {
+                margin-top: 60px;
+            }
+        }
+
+        & .text {
+            & .feature-head {
+                @include b.title(24px);
+                margin-bottom: 20px;
+            }
+
+            & .feature-p {
+                @include b.description(18px);
+            }
+        }
+    }
+
+    .card {
+        width: 70vw;
+        .apply-p {
+            font-size: 16px;
+        }
+    }
+
+    .get-card {
+        .img {
+            @include b.bg(80vw, 35vh);
+        }
+    }
+
 }
